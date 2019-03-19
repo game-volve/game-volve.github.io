@@ -1,0 +1,57 @@
+/* Palette. */
+:root {
+    --white: #fdfdf8;
+    --red: #d32734;
+    --orange: #da7d22;
+    --yellow: #e6da29;
+    --green: #28c641;
+    --blue: #2d93dd;
+    --purple: #7b53ad;
+    --black: #1b1c33;
+}
+
+/* Keeps the font consistent. */
+* {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Keeps the background of the page dark. */
+body {
+    background-color: var(--black);
+}
+
+/* Styling for each section / page. */
+section {
+    text-align: center;
+    padding: 10px;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: var(--white);
+    color: var(--black);
+    border: 2px solid;
+}
+
+/* Styling for the horizontal line. */
+hr {
+    border: 1px solid;
+    width: 70%;
+}
+
+/* Border colours. */
+.borderRed { border-color: var(--red)}
+.borderOrange { border-color: var(--orange)}
+.borderYellow { border-color: var(--yellow)}
+.borderGreen { border-color: var(--green)}
+.borderBlue { border-color: var(--blue)}
+.borderPurple { border-color: var(--purple)}
+.borderBlack { border-color: var(--black)}
+
+/* Outline colours. */
+.red { background-color: var(--red); color: var(--white)}
+.orange { background-color: var(--orange); color: var(--white)}
+.yellow { background-color: var(--yellow); color: var(--black)}
+.green { background-color: var(--green); color: var(--white)}
+.blue { background-color: var(--blue); color: var(--white)}
+.purple { background-color: var(--purple); color: var(--white)}
+.black { background-color: var(--black); color: var(--black)}
+.white { background-color: var(--white); color: var(--white)}
