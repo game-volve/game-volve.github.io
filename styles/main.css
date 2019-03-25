@@ -1,40 +1,99 @@
 /* Palette. */
 :root {
-    --white: #fdfdf8;
-    --red: #d32734;
-    --orange: #da7d22;
-    --yellow: #e6da29;
-    --green: #28c641;
-    --blue: #2d93dd;
-    --purple: #7b53ad;
-    --black: #1b1c33;
+	/* endesga 8 (https://lospec.com/palette-list/endesga-8) */
+	--white: #fdfdf8;
+	--red: #d32734;
+	--orange: #da7d22;
+	--yellow: #e6da29;
+	--green: #28c641;
+	--blue: #2d93dd;
+	--purple: #7b53ad;
+	--black: #1b1c33;
+
+	/* gruvbox (https://github.com/morhetz/gruvbox)
+	--white: #ebdbb2;
+	--red: #fb4934;
+	--orange: #fe8019;
+	--yellow: #fabd2f;
+	--green: #b8bb26;
+	--blue: #83a598;
+	--purple: #d3869b;
+	--black: #282828;
+	*/
+}
+
+::selection {
+	background-color: var(--purple);
+	color: var(--white);
 }
 
 /* Keeps the font consistent. */
 * {
-    font-family: 'Source Code Pro', monospace;
+	font-family: 'Source Code Pro', monospace;
 }
 
 /* Keeps the background of the page dark. */
 body {
-    background-color: var(--black);
+	background-color: var(--black);
 }
 
 /* Styling for each section / page. */
 section {
-    text-align: center;
-    padding: 10px;
-    max-width: 800px;
-    margin: 10px auto;
-    background-color: var(--white);
-    color: var(--black);
-    border: 2px solid;
+	text-align: center;
+	padding: 10px;
+	max-width: 800px;
+	margin: 10px auto;
+	background-color: var(--white);
+	color: var(--black);
+}
+
+iframe, section {
+	border: 2px solid;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Keep sizing consistent*/
+hr, .read-button {
+	width: 70%;
 }
 
 /* Styling for the horizontal line. */
 hr {
-    border: 1px solid;
-    width: 70%;
+	border: 1px solid;
+}
+
+mark, .link {
+	padding: 0 10px;
+}
+
+img {
+	max-width: 70%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border: 2px solid;
+}
+
+/* Read article button. */
+.read-button {
+	display: inline-block;
+	border: none;
+}
+
+/* Formatting for article information. */
+.article-number {
+	float: inline-start;
+}
+
+.article-time {
+	float: inline-end;
+}
+
+.article-text {
+	text-align: left;
 }
 
 /* Border colours. */
@@ -53,5 +112,5 @@ hr {
 .green { background-color: var(--green); color: var(--white)}
 .blue { background-color: var(--blue); color: var(--white)}
 .purple { background-color: var(--purple); color: var(--white)}
-.black { background-color: var(--black); color: var(--black)}
+.black { background-color: var(--black); color: var(--white)}
 .white { background-color: var(--white); color: var(--white)}
