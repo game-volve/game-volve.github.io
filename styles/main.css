@@ -29,6 +29,7 @@
 
 /* Keeps the font consistent. */
 * {
+	font-size: 12px;
 	font-family: 'Source Code Pro', monospace;
 }
 
@@ -65,6 +66,7 @@ hr {
 	border: 1px solid;
 }
 
+/* Add padding. */
 mark, .link {
 	padding: 0 1ch;
 }
@@ -84,12 +86,12 @@ img {
 }
 
 /* Formatting for article information. */
-.article-number {
-	float: inline-start;
+.float-left {
+	float: left;
 }
 
-.article-time {
-	float: inline-end;
+.float-right {
+	float: right;
 }
 
 .article-text {
