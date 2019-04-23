@@ -29,8 +29,11 @@
 
 /* Keeps the font consistent. */
 * {
-	font-size: 12px;
 	font-family: 'Source Code Pro', monospace;
+}
+
+h1 {
+	font-size: 24px;
 }
 
 /* Keeps the background of the page dark. */
@@ -40,9 +43,10 @@ body {
 
 /* Styling for each section / page. */
 section {
+	font-size: 12px;
 	text-align: center;
-	padding: 10px;
-	max-width: 800px;
+	padding: 10px 100px;
+	max-width: 600px;
 	margin: 10px auto;
 	background-color: var(--white);
 	color: var(--black);
@@ -58,7 +62,7 @@ a {
 
 /* Keep sizing consistent*/
 hr, .read-button {
-	width: 70%;
+	width: 100%;
 }
 
 /* Styling for the horizontal line. */
@@ -71,8 +75,11 @@ mark, .link {
 	padding: 0 1ch;
 }
 
+img, iframe {
+	max-width: 100%;
+}
+
 img {
-	max-width: 70%;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
